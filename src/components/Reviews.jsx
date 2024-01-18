@@ -126,6 +126,11 @@ const Reviews = () => {
     ];
   
     return (
+      <div>
+         <div className='w-full py-16 text-white px-4  items-center justify-center '>
+        <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 '>Client Reviews</h1>
+        <p>This is what our clients are saying. Firsthand accounts of remarkable results and unparalleled success achieved by trading with our cutting-edge bots</p>
+      </div>
       <Carousel breakPoints={breakPoints}>
         {reviewsData.map((review) => (
           <StyledReviewItem key={review.id}>
@@ -140,6 +145,7 @@ const Reviews = () => {
           </StyledReviewItem>
         ))}
       </Carousel>
+      </div>
     );
   };
   
