@@ -46,13 +46,17 @@ const Newsletter = () => {
              value={email}
              onChange={(e) => setEmail(e.target.value)}
             />
-            <button className='bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3' onClick={handleNotify}>
-              Notify Me
-            </button>
+              <button
+                className='bg-blue-500 text-white rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3'
+                onClick={handleNotify}
+              >
+                Notify Me
+              </button>
+
           </div>
           <p>
             We care bout the protection of your data. Read our{' '}
-            <span className='text-[#00df9a]'>Privacy Policy.</span>
+            <span className='text-blue-500'>Privacy Policy.</span>
           </p>
         </div>
       </div>

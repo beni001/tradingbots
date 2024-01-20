@@ -30,10 +30,11 @@ const Cards = () => {
   return (
     <div>
       
-      <div className='w-full py-[10rem] p-4 bg-white'>
-        <div>
-        <h1 className="text-4xl font-bold flex  items-center justify-center mb-4 " >The BINARY_SMASHER BOTS</h1>
-      </div>
+      <div className='w-full  py-[10rem] p-4 bg-white'>
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4 mx-auto">The BINARY_SMASHER BOTS</h1>
+        </div>
+
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
             <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
               <div className='w-32 h-32 rounded-md overflow-hidden mx-auto'> <img className=' mx-auto w-full h-full' src={Binary1} alt="/" /></div>

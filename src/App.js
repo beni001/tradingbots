@@ -11,7 +11,7 @@ import SliderComponent from "./components/SliderComponent";
 function App() {
   return (
     <div>
-      <Navbar />
+     <Navbar/>
       <Hero/>
       <Analytics/>
       <Newsletter/>

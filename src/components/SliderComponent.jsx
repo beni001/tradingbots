@@ -6,7 +6,7 @@ import wallpaper3 from '../assets/wallpaper3.jpg';
 import wallpaper4 from '../assets/wallpaper4.jpg';
 import animatedImage1 from '../assets/IMG_1765.jpg';
 import animatedImage2 from '../assets/IMG_1771.jpg';
-import animatedImage3 from '../assets/IMG_1786.jpg';
+// import animatedImage3 from '../assets/IMG_1786.jpg';
 import animatedImage4 from '../assets/IMG_2892.jpg';
 
 const SliderComponent = () => {
@@ -15,7 +15,7 @@ const SliderComponent = () => {
   ];
 
   const animatedImages = [
-    animatedImage1, animatedImage2, animatedImage3, animatedImage4
+    animatedImage1, animatedImage2, animatedImage4
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -49,11 +49,15 @@ return (
 
     {/* Text Div - Right Side */}
     <div className="absolute top-1/4 right-6 w-1/2 md:w-1/2 h-2/3 flex flex-col items-center justify-center text-white z-10 rounded-lg bg-black bg-opacity-50 mt-4 md:mt-0">
-      <h1 className="text-4xl font-bold">Meet Nilote Kenya</h1>
+      <h1 className="text-4xl font-bold text-center">
+        Meet Nilote Kenya
+      </h1>
     </div>
 
+
     {/* Main Images Div */}
-    {mainImages.map((image, index) => (
+    {mainImages.map((image, index) => (  
+      
       <img
         key={index}
         src={image}
