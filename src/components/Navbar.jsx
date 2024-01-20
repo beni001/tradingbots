@@ -40,7 +40,9 @@ const Navbar = () => {
   return (
     <div className="bg-black p-4  pb-8">
       <div className="flex justify-between items-center max-w-[1240px] mx-auto relative">
-        <h1 className="text-3xl font-bold text-white">.NG.</h1>
+      <Link to="/">
+          <img src={`${process.env.PUBLIC_URL}/android-chrome.png`} alt="Logo" className="w-10 h-auto rounded-md" />
+        </Link>
 
         {windowWidth <= 768 && (
           <div onClick={handleNavToggle} className="cursor-pointer">

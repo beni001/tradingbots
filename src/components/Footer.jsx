@@ -1,12 +1,15 @@
 import React from 'react';
 import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
       {/* Contact Information */}
       <div>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>.NG.</h1>
+        <Link to="/">
+            <img src={`${process.env.PUBLIC_URL}/android-chrome.png`} alt="Logo" className="w-10 h-auto rounded-md" />
+          </Link>
         <p className='py-4'>
           Unlock the power of automated trading with Binary Smasher. Elevate your trading experience and stay ahead of the market. Trade smarter, faster, and easier – the future of trading is here.
         </p>
