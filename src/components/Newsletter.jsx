@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useState }  from 'react';
 
 const Newsletter = () => {
+
+
+  const [email, setEmail] = useState('');
+
+  const handleNotify = () => {
+    const encodedMessage = encodeURIComponent(`Hello Nilote, I want to sign up for the newsletter. My email is: ${email}`);
+    window.open(`https://web.whatsapp.com/send?phone=+254729992516&text=${encodedMessage}`, '_blank');
+  };
+
+
   return (
     <div className='w-full py-16 text-white px-4'>
       <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
@@ -13,11 +23,13 @@ const Newsletter = () => {
         <div className='my-4'>
           <div className='flex flex-col sm:flex-row items-center justify-between w-full'>
             <input
-              className='p-3 flex w-full rounded-md text-black'
-              type='email'
-              placeholder='Enter Email'
+             className='p-3 flex w-full rounded-md text-black'
+             type='email'
+             placeholder='Enter Email'
+             value={email}
+             onChange={(e) => setEmail(e.target.value)}
             />
-            <button className='bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3'>
+            <button className='bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3' onClick={handleNotify}>
               Notify Me
             </button>
           </div>

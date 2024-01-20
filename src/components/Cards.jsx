@@ -4,6 +4,14 @@ import Binary2 from '../assets/Binary2.jpg'
 import Mine from '../assets/Mine.jpg'
 
 const Cards = () => {
+
+
+    const handlePurchase = (botName) => {
+      const message = encodeURIComponent(`Hello Nilote, I want to purchase ${botName} trading bot. `);
+      window.open(`https://web.whatsapp.com/send?phone=+254729992516&text=${message}`, '_blank');
+    };
+
+
   return (
     <div>
       
@@ -21,7 +29,7 @@ const Cards = () => {
                     <p className='py-2 border-b mx-8'>Scalping feature</p>
                     <p className='py-2 border-b mx-8'>Back testing</p>
                 </div>
-                <button className='bg-blue-700 w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Purchase</button>
+                <button className='bg-blue-700 w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'onClick={() => handlePurchase('Binary Smasher 1')}>Purchase</button>
             </div>
             <div className='w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300'>
                 <div className='w-32 h-32 rounded-md overflow-hidden mx-auto'> <img className=' mx-auto w-full h-full' src={Binary2} alt="/" /></div>
@@ -32,7 +40,7 @@ const Cards = () => {
                     <p className='py-2 border-b mx-8'>Reverse trading</p>
                     <p className='py-2 border-b mx-8'>Forward testing</p>
                 </div>
-                <button className='bg-blue-700 text-[white] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Purchase</button>
+                <button className='bg-blue-700 text-[white] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'onClick={() => handlePurchase('Binary Smasher 2')}>Purchase</button>
             </div>
             <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
               <div className='w-32 h-32 rounded-md overflow-hidden mx-auto'> <img className='mx-auto  bg-white object-cover w-full h-full' src={Mine} alt="/" /></div> 
@@ -43,7 +51,7 @@ const Cards = () => {
                     <p className='py-2 border-b mx-8'>Stop loss</p>
                     <p className='py-2 border-b mx-8'>Easy to set up and use</p>
                 </div>
-                <button className='bg-blue-700 w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Purchase</button>
+                <button className='bg-blue-700 w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'onClick={() => handlePurchase('Nilote Mine')}>Purchase</button>
             </div>
         </div>
       </div>

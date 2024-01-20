@@ -1,11 +1,14 @@
 import React, { useState,  useLayoutEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link,useHistory } from 'react-router-dom';
 import '../index.css'
 
 const Navbar = () => {
+
+
   const [navOpen, setNavOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
 
   // Using useLayoutEffect for immediate layout effect
   useLayoutEffect(() => {
@@ -46,17 +49,16 @@ const Navbar = () => {
         )}
 
         {windowWidth > 768 && (
-          <ul className="flex-row hidden md:flex space-x-4">
-            
+          <li className="flex-row hidden md:flex space-x-4">
+            <button>
               <Link to="/Hero" className="link-style text-white">
-                Home
+              Home
               </Link>
-            
-
-            <li className="p-4 text-white" onClick={handleCreateAccount}>
-              Create Account
-            </li>
-          </ul>
+            </button>
+            <button className="p-4 text-white" onClick={handleCreateAccount}>
+               create account
+            </button>
+          </li>
         )}
 
         {windowWidth <= 768 && navOpen && (

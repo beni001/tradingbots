@@ -3,87 +3,63 @@ import Carousel from 'react-elastic-carousel';
 import styled from 'styled-components';
 import '../index.css'
 
-const reviewsData = [
+import chamberlinImage from '../assets/reviewers/chamberlin.jpg';
+import christyImage from '../assets/reviewers/christy.jpg';
+import danielSidiImage from '../assets/reviewers/daniel-sidi.jpg';
+import edwardSilaImage from '../assets/reviewers/edward-sila.jpg';
+import prettyJoyImage from '../assets/reviewers/pretty-joy.jpg';
+import trizaKamanuImage from '../assets/reviewers/triza-kamanu.jpg';
+
+
+
+  const reviewsData = [
     {
-        "id": 1,
-        "name": "Sarah Trader",
-        "image": "url-to-image-2.jpg",
-        "rating": 5,
-        "review": "Unbelievable gains! My profits soared after using Binary Smasher Bots. I'm on my way to financial freedom!"
-      },
-     
-      {
-        "id": 2,
-        "name": "AlexInvestor",
-        "image": "url-to-image-3.jpg",
-        "rating": 4,
-        "review": "Great tool, consistent results. It could use a bit more customization, but overall, I'm impressed!"
-      },
-     
-      {
-        "id": 3,
-        "name": "CryptoGuru23",
-        "image": "url-to-image-4.jpg",
-        "rating": 5,
-        "review": "Binary Smasher Bots worked wonders for my crypto trades! My portfolio has never looked better."
-      },
-      
-      {
-        "id": 4,
-        "name": "Mark Profitson",
-        "image": "url-to-image-5.jpg",
-        "rating": 5,
-        "review": "Turned my losses into gains overnight! Binary Smasher Bots are a game-changer for anyone serious about trading."
-      },
-    
-      {
-        "id": 5,
-        "name": "TradingQueen",
-        "image": "url-to-image-6.jpg",
-        "rating": 5,
-        "review": "Binary Smasher Bots made trading so much easier. I've recommended it to all my friends!"
-      },
-    
-      {
-        "id": 6,
-        "name": "FinancialWizard42",
-        "image": "url-to-image-7.jpg",
-        "rating": 4,
-        "review": "The bots are effective, but the user interface could be more intuitive. Still, the results speak for themselves."
-      },
-      
-      {
-        "id": 7,
-        "name": "JaneInvestsSmart",
-        "image": "url-to-image-8.jpg",
-        "rating": 5,
-        "review": "Binary Smasher Bots are my secret weapon for trading success. Easy to use, and the gains are unbeatable!"
-      },
-       {
-        "id": 8,
-        "name": "ProfitPioneer",
-        "image": "url-to-image-9.jpg",
-        "rating": 4,
-        "review": "The bots are effective, but the user interface could be more intuitive. Still, the results speak for themselves."
-      },
-      
-      {
-        "id": 9,
-        "name": "RobinTrader",
-        "image": "url-to-image-10.jpg",
-        "rating": 5,
-        "review": "Binary Smasher Bots are my secret weapon for trading success. Easy to use, and the gains are unbeatable!"
-      },
-    
-      {
-        "id": 10,
-        "name": "InvestProdigy",
-        "image": "url-to-image-11.jpg",
-        "rating": 5,
-        "review": "I've tried many trading tools, but Binary Smasher Bots outshine them all. The ROI is impressive, and I'm a customer for life!"
-      }
-    // Add more reviews as needed
+      "id": 1,
+      "name": "Chamberlin",
+      "image": chamberlinImage,
+      "rating": 5,
+      "review": "Unbelievable gains! My profits soared after using Binary Smasher Bots. Hio binary smasher two imeweza"
+    },
+    {
+      "id": 2,
+      "name": "Christy",
+      "image": christyImage,
+      "rating": 4,
+      "review": "Great tool, consistent results. It could use a bit more customization, but overall, I'm impressed!"
+    },
+    {
+      "id": 3,
+      "name": "Daniel Sidi",
+      "image": danielSidiImage,
+      "rating": 5,
+      "review": "there was constant communacation untill i recieved every information i neede until i began making profits"
+    },
+    {
+      "id": 4,
+      "name": "Edward Sila",
+      "image": edwardSilaImage,
+      "rating": 5,
+      "review": "Hii bot ndo nimeaminia nimetrade kama beginner kabisaa na bado nimemake profits "
+    },
+    {
+      "id": 5,
+      "name": "Pretty Joy",
+      "image": prettyJoyImage,
+      "rating": 5,
+      "review": "Binary Smasher Bots made trading so much easier. I've recommended it to all my friends!"
+    },
+    {
+      "id": 6,
+      "name": "Triza Kamanu",
+      "image": trizaKamanuImage,
+      "rating": 4,
+      "review": "The bots are effective, but the user interface could be more intuitive. Still, the results speak for themselves."
+    },
   ];
+
+  const StyledStar = styled.span`
+  color: yellow; // Set the color to yellow or your desired color
+`;
  
   const StyledReviewItem = styled.div`
   margin: 10px;
@@ -127,24 +103,25 @@ const Reviews = () => {
   
     return (
       <div>
-         <div className='w-full py-16 text-white px-4  items-center justify-center '>
-        <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 '>Client Reviews</h1>
-        <p>This is what our clients are saying. Firsthand accounts of remarkable results and unparalleled success achieved by trading with our cutting-edge bots</p>
-      </div>
-      <Carousel breakPoints={breakPoints}>
-        {reviewsData.map((review) => (
-          <StyledReviewItem key={review.id}>
-            <img src={review.image} alt={`Avatar of ${review.name}`} />
-            <h3>{review.name}</h3>
-            <p>{review.review}</p>
-            <div className="rating">
-              {[...Array(review.rating)].map((_, index) => (
-                <span key={index}>&#9733;</span>
-              ))}
-            </div>
-          </StyledReviewItem>
-        ))}
-      </Carousel>
+      <div className='w-full py-16 text-white px-4 flex flex-col items-center justify-center'>
+      <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>Client Reviews</h1>
+      <p className='text-center'>This is what our clients are saying. Firsthand accounts of remarkable results and unparalleled success achieved by trading with our cutting-edge bots</p>
+    </div>
+    
+    <Carousel breakPoints={breakPoints}>
+      {reviewsData.map((review) => (
+        <StyledReviewItem key={review.id}>
+          <img src={review.image} alt={`Avatar of ${review.name}`} />
+          <h3>{review.name}</h3>
+          <p>{review.review}</p>
+          <div className="rating">
+            {[...Array(review.rating)].map((_, index) => (
+              <StyledStar key={index}>&#9733;</StyledStar>
+            ))}
+          </div>
+        </StyledReviewItem>
+      ))}
+    </Carousel>
       </div>
     );
   };
