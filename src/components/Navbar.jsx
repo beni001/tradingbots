@@ -1,6 +1,6 @@
 import React, { useState,  useLayoutEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link,useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../index.css'
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
 
   const handleCreateAccount = () => {
     const message = encodeURIComponent("Hello Nilote, I want to create an account.");
-    window.open(`https://web.whatsapp.com/send?phone=+254729992516&text=${message}`, '_blank');
+    window.open(`https://api.whatsapp.com/send?phone=+254729992516&text=${message}`, '_blank');
   };
 
   return (

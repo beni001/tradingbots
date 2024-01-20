@@ -6,10 +6,27 @@ const Newsletter = () => {
   const [email, setEmail] = useState('');
 
   const handleNotify = () => {
-    const encodedMessage = encodeURIComponent(`Hello Nilote, I want to sign up for the newsletter. My email is: ${email}`);
-    window.open(`https://web.whatsapp.com/send?phone=+254729992516&text=${encodedMessage}`, '_blank');
-  };
+    const phoneNumber = '+254729992516';
+    const message = encodeURIComponent(`Hello Nilote, I want to sign up for the newsletter. My email is: ${email}`);
 
+    // Determine the screen width
+    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    // Construct the appropriate WhatsApp link based on screen width
+    let url;
+    if (screenWidth < 600) {
+        // For small screens (e.g., phones)
+        url = `https://api.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}&text=${message}`;
+    } else {
+        // For larger screens (e.g., laptops)
+        url = `https://web.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}&text=${message}`;
+    }
+
+    // Open a new window or tab
+    window.open(url, '_blank');
+};
+
+  
 
   return (
     <div className='w-full py-16 text-white px-4'>
