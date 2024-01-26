@@ -39,7 +39,7 @@ const Cards = () => {
             <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
               <div className='w-32 h-32 rounded-md overflow-hidden mx-auto'> <img className=' mx-auto w-full h-full' src={Binary1} alt="/" /></div>
                 <h2 className='text-2xl font-bold text-center py-8'>Binary Smasher 1</h2>
-                <p className='text-center text-4xl font-bold'>$100</p>
+                <p className='text-center text-4xl font-bold'>$75</p>
                 <div className='text-center font-medium'>
                     <p className='py-2 border-b mx-8 mt-8'> Arbitrage Strategy</p>
                     <p className='py-2 border-b mx-8'>Scalping feature</p>
@@ -50,7 +50,7 @@ const Cards = () => {
             <div className='w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300'>
                 <div className='w-32 h-32 rounded-md overflow-hidden mx-auto'> <img className=' mx-auto w-full h-full' src={Binary2} alt="/" /></div>
                 <h2 className='text-2xl font-bold text-center py-8'>Binary Smasher 2</h2>
-                <p className='text-center text-4xl font-bold'>$150</p>
+                <p className='text-center text-4xl font-bold'>$100</p>
                 <div className='text-center font-medium'>
                     <p className='py-2 border-b mx-8 mt-8'>Momentum trading</p>
                     <p className='py-2 border-b mx-8'>Reverse trading</p>
@@ -61,7 +61,7 @@ const Cards = () => {
             <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
               <div className='w-32 h-32 rounded-md overflow-hidden mx-auto'> <img className='mx-auto  bg-white object-cover w-full h-full' src={Mine} alt="/" /></div> 
                 <h2 className='text-2xl font-bold text-center py-8'>Nilote Mine</h2>
-                <p className='text-center text-4xl font-bold'>$75</p>
+                <p className='text-center text-4xl font-bold'>$60</p>
                 <div className='text-center font-medium'>
                     <p className='py-2 border-b mx-8 mt-8'>Moving Average crossover</p>
                     <p className='py-2 border-b mx-8'>Stop loss</p>
