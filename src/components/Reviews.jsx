@@ -66,8 +66,8 @@ import anuArikeImage from '../assets/reviewers/anu arike.jpeg';
       "id": 7,
       "name": "Anu Arike",
       "image": anuArikeImage,
-      "rating": 4.5,
-      "review": "]I did not beliee at first but With Binary Smasher Bot, I've unlocked the path to profitable trading."
+      "rating": 4,
+      "review": "I did not believe at first but With Binary Smasher Bot, I've unlocked the path to profitable trading."
     },
     {
       "id": 8,
