@@ -9,6 +9,13 @@ import danielSidiImage from '../assets/reviewers/daniel-sidi.jpg';
 import edwardSilaImage from '../assets/reviewers/edward-sila.jpg';
 import prettyJoyImage from '../assets/reviewers/pretty-joy.jpg';
 import trizaKamanuImage from '../assets/reviewers/triza-kamanu.jpg';
+import willyMoseyaImage from '../assets/reviewers/willy moseya.jpeg';
+import sandiaRaloseImage from '../assets/reviewers/sandia ralose.jpeg';
+import narmuliaMarthaImage from '../assets/reviewers/narmulia martha.jpeg';
+import donEmmanuelImage from '../assets/reviewers/don emmanuel.jpeg';
+import dennoBixbyImage from '../assets/reviewers/denno bixby.jpg';
+import aprilDavinciImage from '../assets/reviewers/april davinci.jpeg';
+import anuArikeImage from '../assets/reviewers/anu arike.jpeg';
 
 
 
@@ -55,6 +62,57 @@ import trizaKamanuImage from '../assets/reviewers/triza-kamanu.jpg';
       "rating": 4,
       "review": "The bots are effective, but the user interface could be more intuitive. Still, the results speak for themselves."
     },
+    {
+      "id": 7,
+      "name": "Anu Arike",
+      "image": anuArikeImage,
+      "rating": 4.5,
+      "review": "]I did not beliee at first but With Binary Smasher Bot, I've unlocked the path to profitable trading."
+    },
+    {
+      "id": 8,
+      "name": "April Davinci",
+      "image": aprilDavinciImage,
+      "rating": 5,
+      "review": "Trading with Binary Smasher Bot is like having a money-making machine."
+    },
+    {
+      "id": 9,
+      "name": "Denno Bixby",
+      "image": dennoBixbyImage,
+      "rating": 5,
+      "review": "I was skeptical at first, but after using Binary Smasher Bot, I'm a believer. It's transformed my approach to trading and given me the confidence to pursue my investment dreams. Thank you, Binary Smasher."
+    },
+    {
+      "id": 10,
+      "name": "Don Emmanuel",
+      "image": donEmmanuelImage,
+      "rating": 4,
+      "review": "the bot has easy procces to excecute trades binary smasher is great."
+    },
+    {
+      "id": 11,
+      "name": "Narmulia Martha",
+      "image": narmuliaMarthaImage,
+      "rating": 5,
+      "review": "Thanks for you assistance in regaining my originaly lost money the bot helps me a lot."
+    },
+    {
+      "id": 12,
+      "name": "Sandia Ralose",
+      "image": sandiaRaloseImage,
+      "rating": 4,
+      "review": "I'm very happy with Binary Smasher Bot because I managed to make a great profits in less than half an hour."
+    },
+    {
+      "id": 13,
+      "name": "Willy Moseya",
+      "image": willyMoseyaImage,
+      "rating": 4,
+      "review": "My phone became my bank since i got this binary smasher."
+    },
+   
+    
   ];
 
   const StyledStar = styled.span`
